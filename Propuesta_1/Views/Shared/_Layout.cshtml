@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="es">
+
+<head>
+
+    <!-- Basic -->
+    <title>Rider Lock RD | @ViewBag.Title</title>
+
+    <!-- Define Charset -->
+    <meta charset="utf-8">
+
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Page Description and Author -->
+    <meta name="description" content="Sitio web destinado a la imagen en la web de la empresa Rider Lock RD">
+    <meta name="author" content="Marcos Lluberes">
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="~/asset/bootstrap/css/bootstrap.min.css" type="text/css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="~/asset/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="~/asset/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="~/asset/css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="~/asset/css/owl.transitions.css" type="text/css">
+
+    <!-- Css3 Transitions Styles  -->
+    <link rel="stylesheet" type="text/css" href="~/asset/css/animate.css">
+
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" type="text/css" href="~/asset/css/lightbox.css">
+
+    <!-- Sulfur CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="~/asset/css/style.css">
+
+    <!-- Responsive CSS Style -->
+    <link rel="stylesheet" type="text/css" href="~/asset/css/responsive.css">
+
+
+    <script src="~/asset/js/modernizrr.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="clearfix">
+
+        <!-- Start Top Bar -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-bar">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <!-- Start Contact Info -->
+                                <ul class="contact-details">
+                                    <li>
+                                        <a href="tel:8098070114"><i class="fa fa-phone"></i> (809) 807 0114</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:riderlock1@gmail.com"><i class="fa fa-envelope-o"></i> riderlock1@gmail.com</a>
+                                    </li>
+                                </ul>
+                                <!-- End Contact Info -->
+                            </div><!-- .col-md-6 -->
+
+                            <div class="col-md-6">
+                                <!-- Start Social Links -->
+                                <ul class="social-list">
+                                    <li>
+                                        <a href="https://www.facebook.com/rider.lockrd.5" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/riderlock/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                </ul>
+                                <!-- End Social Links -->
+                            </div><!-- .col-md-6 -->
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div><!-- .row -->
+        </div><!-- .container -->
+        <!-- End Top Bar -->
+        <!-- Start  Logo & Naviagtion  -->
+        <div id="NavigationBar" class="navbar navbar-default navbar-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Stat Toggle Nav Link For Mobiles -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- End Toggle Nav Link For Mobiles -->
+                    <a href="@Url.Action("Index", "Home")">
+                        <img src="~/asset/images/Brand/Riderlock_brand.png" />
+                    </a>
+                </div>
+                @Html.Action("GetMenu", "Misc", new { id = ViewBag.Action })
+            </div>
+        </div>
+        <!-- End Header Logo & Naviagtion -->
+
+    </header>
+
+    @RenderBody()
+
+    <!-- Start Footer Section -->
+    <section id="footer-section" class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="section-heading-2">
+                        <h3 class="section-title">
+                            <span>Informaci&oacute;n B&aacute;sica</span>
+                        </h3>
+                    </div>
+
+                    <div class="footer-address">
+                        <ul>
+                            <li class="footer-contact"><i class="fa fa-home"></i><a href="#" target="_blank"></a>C/Rotonda esq. Cayetano Germosen no. 25</li>
+                            <li class="footer-contact"><i class="fa fa-envelope"></i><a href="mailto:riderlock1@gmail.com">riderlock1@gmail.com</a></li>
+                            <li class="footer-contact"><i class="fa fa-phone"></i><a href="tel:8098070114">(809) 807-0114</a></li>
+                            <li class="footer-contact"><i class="fa fa-globe"></i>@Html.ActionLink("www.riderlockrd.com", "Index", "Home")</li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-4 -->
+
+
+                <div class="col-md-4">
+                    <div class="section-heading-2">
+                        <h3 class="section-title">
+                            <span>Nosotros</span>
+                        </h3>
+                    </div>
+
+                    <div class="latest-tweet">
+                        <div class="media">
+                            <div class="media-left">
+                                <i class="fa fa-motorcycle fa-2x media-object"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Rider Lock</h4>
+                                <p>Instalamos dispositivos que facilitan el estacionamiento de motocicletas manteniendo el orden y la limpieza.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="section-heading-2">
+                        <h3 class="section-title">
+                            <span>Informate Constantemente</span>
+                        </h3>
+                    </div>
+                    <div class="subscription">
+                        <p>Suscribete a nuestra lista de correos y mantente informado de nuestras &uacute;ltimas ofertas.</p>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Introduzca su nombre por favor.">
+                            <input type="tel" class="form-control" placeholder="Teléfono (Opcional)" id="phone">
+                            <input type="email" class="form-control" placeholder="Correo Electrónico" id="email" required data-validation-required-message="Introduzca su correo por favor.">
+                            <input type="submit" class="btn btn-primary" value="Suscribirme">
+                        </div>
+                    </div>
+                </div><!--/.col-md-4 -->
+            </div><!--/.row -->
+        </div><!-- /.container -->
+    </section>
+    <!-- End Footer Section -->
+    <!-- Start CCopyright Section -->
+    <div id="copyright-section" class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="copyright">
+                        Copyright &copy; @DateTime.Now.Year. Todos los Derechos Reservados. Dise&ntilde;o y Desarrollo por <a href="http://www.themefisher.com" target="_blank">Themefisher</a> y Marcos Lluberes
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="copyright-menu pull-right">
+                        <ul>
+                            <li>@Html.ActionLink("Inicio", "Index", "Home", null, new { @class = "active" })</li>
+                            <li>@Html.ActionLink("Nosotros", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--/.row -->
+        </div><!-- /.container -->
+    </div>
+    <!-- End CCopyright Section -->
+    <!-- Sulfur JS File -->
+    <script src="~/asset/js/jquery-2.1.3.min.js"></script>
+    <script src="~/asset/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="~/asset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/asset/js/owl.carousel.min.js"></script>
+    <script src="~/asset/js/jquery.appear.js"></script>
+    <script src="~/asset/js/jquery.fitvids.js"></script>
+    <script src="~/asset/js/jquery.nicescroll.min.js"></script>
+    <script src="~/asset/js/lightbox.min.js"></script>
+    <script src="~/asset/js/count-to.js"></script>
+    <script src="~/asset/js/styleswitcher.js"></script>
+
+    <script src="~/asset/js/map.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="~/asset/js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 42) {
+                    $('#NavigationBar').addClass('navbar-fixed-top');
+                } else {
+                    $('#NavigationBar').removeClass('navbar-fixed-top');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

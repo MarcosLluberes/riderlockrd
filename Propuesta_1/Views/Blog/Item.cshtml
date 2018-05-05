@@ -1,0 +1,131 @@
+﻿@model Propuesta_1.Models.BlogEntry
+@{
+    ViewBag.Title = Model.Nombre;
+}
+
+<!-- Start Header Section -->
+<div class="page-header">
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Blog</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Header Section -->
+<!-- Start Blog Page Section -->
+<div class="container">
+    <div class="row">
+
+        <!-- Start Blog Body Section -->
+        <div class="col-md-8 blog-body">
+
+            <!-- Start Blog post -->
+            <div class="single-blog-post">
+                <div class="post-img">
+                    <img src="~/asset/images/Fake/@Model.Img" class="img-responsive" alt="Blog image">
+                </div>
+                <h1 class="post-title"><a href="#">@Model.Nombre</a></h1>
+
+                <div class="post-meta">
+                    <ul class=" pull-left">
+                        <li><i class="fa fa-clock-o"></i>@Model.Fecha</li>
+                        <li><i class="fa fa-user"></i><a href="#">@Model.Autor</a></li>
+                        <li><i class="fa fa-file"></i><a href="#">Categoría 1</a></li>
+                        <li><i class="fa fa-tags"></i><a href="#">@Model.Tag</a></li>
+                    </ul>
+                </div>
+
+                @Html.Raw(Model.Contenido)
+
+                <div class="item-content-footer">
+                    <ul>
+                        <li>Leído 153 veces</li>
+                        <li class="rating">
+                            Rating
+                            <span class="active"><i class="fa fa-star-o"></i></span>
+                            <span class="active"><i class="fa fa-star-o"></i></span>
+                            <span class="active"><i class="fa fa-star-o"></i></span>
+                            <span><i class="fa fa-star-o"></i></span>
+                            <span><i class="fa fa-star-o"></i></span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- End Blog Post -->
+
+
+
+
+        </div>
+        <!-- End Blog Body Section -->
+        <!-- Start Sidebar Section -->
+        <div class="col-md-4 sidebar right-sidebar">
+
+            <!-- Start Blog categories widget -->
+            <div class="widget widget-categories">
+
+                <div class="section-heading-2">
+                    <h3 class="section-title">
+                        <span>Blog Categories</span>
+                    </h3>
+                </div>
+
+                <ul>
+                    <li>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="#">Categoría 1</a>
+                        <a href="#" class="cat-counter">(4)</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="#">Categoría 2</a>
+                        <a href="#" class="cat-counter">(0)</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="#">Categoría 3</a>
+                        <a href="#" class="cat-counter">(0)</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-angle-double-right"></i>
+                        <a href="#">Categoría 4</a>
+                        <a href="#" class="cat-counter">(0)</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- End Blog categories widget -->
+            <!-- Start Tag Cloud Widget -->
+            <div class="widget widget-tags">
+
+                <div class="section-heading-2">
+                    <h3 class="section-title">
+                        <span>Popular Tags</span>
+                    </h3>
+                </div>
+
+                <div class="tagcloud">
+                    <a href="#">Tag 1</a>
+                    <a href="#">Tag 2</a>
+                    <a href="#">Tag 3</a>
+                    <a href="#">Tag 4</a>
+                    <a href="#">Tag 5</a>
+                    <a href="#">Tag 6</a>
+                </div>
+
+            </div>
+            <!-- End Tag Cloud Widget -->
+
+
+
+        </div>
+        <!-- End Sidebar Section -->
+
+    </div>
+</div>
+<!-- End Blog Page Section -->

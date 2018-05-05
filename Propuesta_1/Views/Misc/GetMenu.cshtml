@@ -1,0 +1,33 @@
+﻿<div class="navbar-collapse collapse">
+
+    <!-- Start Navigation List -->
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("Inicio", "Index", "Home", null, new { @class = (ViewBag.Action == "Index") ? "active" : "" })
+        </li>
+        <li>
+            @Html.ActionLink("Nosotros", "About", "Home", null, new { @class = (ViewBag.Action == "About") ? "active" : "" })
+        </li>
+        <li>
+            <a href="#">Productos</a>
+            <ul class="dropdown">
+                <li>
+                    @Html.ActionLink("Tipos de Cerradura", "Locks", "Product", null, new { @class = (ViewBag.Action == "Lock") ? "active" : "" })
+                </li>
+                <li>
+                    <a href="#">Otros Productos</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            @Html.ActionLink("Portafolio", "Portofolio", "Home", null, new { @class = (ViewBag.Action == "Portofolio") ? "active" : "" })
+        </li>
+        <li>
+            @Html.ActionLink("Blog", "Index", "Blog", null, new { @class = (ViewBag.Action == "Blog") ? "active" : "" })
+        </li>
+        <li>
+            @Html.ActionLink("Contacto", "Contact", "Home", null, new { @class = (ViewBag.Action == "Contact") ? "active" : "" })
+        </li>
+    </ul>
+    <!-- End Navigation List -->
+</div>
